@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run On Chrome"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="13.151">
+  <properties />
+  
+  
+            <testcase name="TC03_LogIn_NotExistedEmail" time="3.257" classname="com.nopcommerce.login.TC_01_LogIn" />
+                <testcase name="TC05_LogIn_WrongPassword" time="3.123" classname="com.nopcommerce.login.TC_01_LogIn" />
+                <testcase name="TC02_LogIn_InvalidEmail" time="2.682" classname="com.nopcommerce.login.TC_01_LogIn" />
+                <testcase name="TC04_LogIn_EmptyPassword" time="3.868" classname="com.nopcommerce.login.TC_01_LogIn" />
+                <testcase name="TC01_LogIn_EmptyData" time="0.221" classname="com.nopcommerce.login.TC_01_LogIn" />
+      
+</testsuite>

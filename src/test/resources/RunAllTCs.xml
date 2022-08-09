@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Nopcommerce">
+<suite-files>
+	<suite-file path ="RunUsersTCs.xml"/>
+	<suite-file path ="RunAdminTCs.xml"/>
+</suite-files>
+</suite> <!-- Suite -->

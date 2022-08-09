@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sauce Labs]">
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="reportConfig.AllureTestListener"/>
+    <listener class-name="reportConfig.ReportNGListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="retryConfig.RetryListener"/>
+  </listeners>
+  <test thread-count="5" name="Run On Chrome(failed)">
+    <parameter name="browser" value="chrome_ui"/>
+    <classes>
+      <class name="com.nopcommerce.myaccount.TC_01_MyAccount">
+        <methods>
+          <include name="deleteAllFilesInReportNGScreenshot"/>
+          <include name="TC04_MyAccount_MyProductView"/>
+          <include name="beforeClass"/>
+          <include name="TC01_MyAccount_EdiCustomerInfo"/>
+          <include name="TC02_MyAccount_AddAddressInfo"/>
+          <include name="TC03_MyAccount_ChangePassword"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.nopcommerce.myaccount.TC_01_MyAccount -->
+      <class name="com.nopcommerce.search.TC_01_Search">
+        <methods>
+          <include name="TC01_Search_WithEmptyData"/>
+          <include name="TC05_Search_AdvancedWithParentCategory"/>
+          <include name="deleteAllFilesInReportNGScreenshot"/>
+          <include name="TC03_Search_WithProductName"/>
+          <include name="TC08_Search_AdvancedWitCorrectManufacturer"/>
+          <include name="navigateBrowser"/>
+          <include name="TC02_Search_WithNotExistedData"/>
+          <include name="TC07_Search_AdvancedWithInCorrectManufacturer"/>
+          <include name="afterClass"/>
+          <include name="TC04_Search_WithExactlyProductName"/>
+          <include name="TC06_Search_AdvancedWithSubCategory"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.nopcommerce.search.TC_01_Search -->
+      <class name="com.nopcommerce.sort.TC_01_Sort_Display_Paging">
+        <methods>
+          <include name="TC01_Sort_By_Name_AZ"/>
+          <include name="TC02_Sort_By_Name_ZA"/>
+          <include name="TC03_Sort_By_Price_LowToHigh"/>
+          <include name="TC06_Six_Item_Display"/>
+          <include name="TC07_Nine_Item_Display"/>
+          <include name="deleteAllFilesInReportNGScreenshot"/>
+          <include name="TC05_Three_Item_Display"/>
+          <include name="TC04_Sort_By_Price_HighToLow"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.nopcommerce.sort.TC_01_Sort_Display_Paging -->
+      <class name="com.nopcommerce.register.TC_01_Register">
+        <methods>
+          <include name="afterClass"/>
+          <include name="deleteAllFilesInReportNGScreenshot"/>
+          <include name="beforeClass"/>
+          <include name="TC01_Register_EmptyData"/>
+          <include name="TC02_Register_InvalidEmail"/>
+          <include name="TC03_Register_ExistedEmail"/>
+          <include name="TC03_Register_InvalidPassword"/>
+          <include name="navigateBrowser"/>
+        </methods>
+      </class> <!-- com.nopcommerce.register.TC_01_Register -->
+      <class name="com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView">
+        <methods>
+          <include name="TC01_AddProductToWishlist"/>
+          <include name="afterClass"/>
+          <include name="deleteAllFilesInReportNGScreenshot"/>
+          <include name="TC02_AddProductToCard"/>
+          <include name="beforeClass"/>
+          <include name="TC05_RecentReviewProduct"/>
+          <include name="TC04_CompareProduct"/>
+          <include name="TC03_RemoveProduct"/>
+        </methods>
+      </class> <!-- com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView -->
+      <class name="com.nopcommerce.login.TC_01_LogIn">
+        <methods>
+          <include name="TC04_LogIn_EmptyPassword"/>
+          <include name="TC03_LogIn_NotExistedEmail"/>
+          <include name="TC01_LogIn_EmptyData"/>
+          <include name="deleteAllFilesInReportNGScreenshot"/>
+          <include name="beforeClass"/>
+          <include name="TC05_LogIn_WrongPassword"/>
+          <include name="afterClass"/>
+          <include name="TC02_LogIn_InvalidEmail"/>
+          <include name="navigateBrowser"/>
+        </methods>
+      </class> <!-- com.nopcommerce.login.TC_01_LogIn -->
+    </classes>
+  </test> <!-- Run On Chrome(failed) -->
+</suite> <!-- Failed suite [Sauce Labs] -->

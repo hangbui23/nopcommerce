@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run On Chrome"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="74.087">
+  <properties />
+  
+  
+            <testcase name="TC04_SearchWithFirstLastName" time="15.131" classname="com.nopcommerce.admin.search.TC_02_Admin_Customer" />
+                <testcase name="TC05_SearchWithFullData" time="10.525" classname="com.nopcommerce.admin.search.TC_02_Admin_Customer" />
+                <testcase name="TC01_CreateNewCustomer" time="27.269" classname="com.nopcommerce.admin.search.TC_02_Admin_Customer" />
+                <testcase name="TC02_SearchWithEmail" time="9.431" classname="com.nopcommerce.admin.search.TC_02_Admin_Customer" />
+                <testcase name="TC03_SearchWithFirstLastName" time="11.731" classname="com.nopcommerce.admin.search.TC_02_Admin_Customer" />
+      
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run On Chrome"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="52.038">
+  <properties />
+  
+  
+            <testcase name="TC01_MyAccount_EdiCustomerInfo" time="9.114" classname="com.nopcommerce.myaccount.TC_01_MyAccount" />
+                <testcase name="TC04_MyAccount_MyProductView" time="8.395" classname="com.nopcommerce.myaccount.TC_01_MyAccount" />
+                <testcase name="TC02_MyAccount_AddAddressInfo" time="17.045" classname="com.nopcommerce.myaccount.TC_01_MyAccount" />
+                <testcase name="TC03_MyAccount_ChangePassword" time="17.484" classname="com.nopcommerce.myaccount.TC_01_MyAccount" />
+      
+</testsuite>

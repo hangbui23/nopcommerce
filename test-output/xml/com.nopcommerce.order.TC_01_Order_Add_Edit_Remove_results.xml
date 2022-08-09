@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run On Chrome"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="39.115">
+  <properties />
+  
+  
+            <testcase name="TC03_RemoveProductInCart" time="5.618" classname="com.nopcommerce.order.TC_01_Order_Add_Edit_Remove" />
+                <testcase name="TC01_AddProductToCart" time="12.764" classname="com.nopcommerce.order.TC_01_Order_Add_Edit_Remove" />
+                <testcase name="TC02_EditProductInCart" time="20.733" classname="com.nopcommerce.order.TC_01_Order_Add_Edit_Remove" />
+      
+</testsuite>

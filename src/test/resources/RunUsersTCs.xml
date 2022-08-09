@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Nopcommerce" parallel="false" thread-count="3">
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+		<!-- <listener class-name="reportConfig.ExtendReportListenerVersion4" /> -->
+		<listener class-name="reportConfig.AllureTestListener" />
+		<listener class-name="reportConfig.ReportNGListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="retryConfig.RetryListener" />
+	</listeners>
+	<test name="Run On Chrome">
+		<parameter name="browser" value="chrome_ui"></parameter>
+		<!-- <parameter name="ipNode" value="192.168.x.x"></parameter>
+		<parameter name="port" value="5555"></parameter> -->
+		<classes>
+			<class name="com.nopcommerce.common.User_Common_RegisterAndLogInSuccess" />
+			<class name="com.nopcommerce.user.register.TC_01_Register" />
+			<class name="com.nopcommerce.user.login.TC_01_LogIn" />
+			<class name="com.nopcommerce.user.search.TC_01_Search" />
+			<class name="com.nopcommerce.user.sort.TC_01_Sort_Display_Paging" />
+			<class name="com.nopcommerce.user.wishlist.TC_01_Wishlist_Compare_RecentView" />
+			<class name="com.nopcommerce.user.order.TC_01_Order_Add_Edit_Remove" />
+			<class name="com.nopcommerce.user.order.TC_02_Update_CheckOut" />
+			<class name="com.nopcommerce.user.order.TC_03_ReOrder" />
+			<class name="com.nopcommerce.user.myaccount.TC_01_MyAccount" />
+		</classes>
+	</test>
+
+<test name="Run On Firefox">
+		<parameter name="browser" value="firefox_ui"></parameter>
+		<parameter name="ipNode" value="192.168.x.x"></parameter>
+		<parameter name="port" value="5555"></parameter> 
+		<classes>
+			<class name="com.nopcommerce.common.User_Common_RegisterAndLogInSuccess" />
+			<class name="com.nopcommerce.user.register.TC_01_Register" />
+			<class name="com.nopcommerce.user.login.TC_01_LogIn" />
+			<class name="com.nopcommerce.user.search.TC_01_Search" />
+			<class name="com.nopcommerce.user.sort.TC_01_Sort_Display_Paging" />
+			<class name="com.nopcommerce.user.wishlist.TC_01_Wishlist_Compare_RecentView" />
+			<class name="com.nopcommerce.user.order.TC_01_Order_Add_Edit_Remove" />
+			<class name="com.nopcommerce.user.order.TC_02_Update_CheckOut" />
+			<class name="com.nopcommerce.user.order.TC_03_ReOrder" />
+			<class name="com.nopcommerce.user.myaccount.TC_01_MyAccount" />
+		</classes>
+	</test>
+
+<test name="Run On Edge">
+		<parameter name="browser" value="edge_ui"></parameter>
+		<parameter name="ipNode" value="192.168.x.x"></parameter>
+		<parameter name="port" value="5555"></parameter>
+		<classes>
+			<class name="com.nopcommerce.common.User_Common_RegisterAndLogInSuccess" />
+			<class name="com.nopcommerce.user.register.TC_01_Register" />
+			<class name="com.nopcommerce.user.login.TC_01_LogIn" />
+			<class name="com.nopcommerce.user.search.TC_01_Search" />
+			<class name="com.nopcommerce.user.sort.TC_01_Sort_Display_Paging" />
+			<class name="com.nopcommerce.user.wishlist.TC_01_Wishlist_Compare_RecentView" />
+			<class name="com.nopcommerce.user.order.TC_01_Order_Add_Edit_Remove" />
+			<class name="com.nopcommerce.user.order.TC_02_Update_CheckOut" />
+			<class name="com.nopcommerce.user.order.TC_03_ReOrder" />
+			<class name="com.nopcommerce.user.myaccount.TC_01_MyAccount" />
+		</classes>
+	</test>
+	Test
+
+	<!-- <test name="Run On Firefox"> <parameter name="browser" value="firefox_ui"></parameter> <classes> <class name="com.nopcomerce.users.Level11_Register_LogIn_LogReport" /> </classes> </test> Test -->
+
+	<!-- <test name="Run On Chrome Headless"> <parameter name="browser" value="chrome_headless"></parameter> <classes> <class name="com.nopcomerce.users.Level4_Register_LogIn_MultipleBrowser" /> </classes> </test> Test <test name="Run On Firefox Headless"> 
+		<parameter name="browser" value="firefox_headless"></parameter> <classes> <class name="com.nopcomerce.users.Level4_Register_LogIn_MultipleBrowser" /> </classes> </test> Test -->
+	-->
+
+	<!-- <test name="Run On Edge"> <parameter name="browser" value="edge"></parameter> <classes> <class name="com.nopcomerce.users.Level7_Register_LogIn_DynamicLocator" /> </classes> </test> Test -->
+
+</suite> <!-- Suite -->

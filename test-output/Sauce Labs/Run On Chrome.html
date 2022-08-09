@@ -1,0 +1,342 @@
+<html>
+<head>
+<title>TestNG:  Run On Chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Run On Chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>33/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Sep 19 18:42:17 ICT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>260 seconds (260757 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView.TC01_AddProductToWishlist()'><b>TC01_AddProductToWishlist</b><br>Test class: com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView</td>
+<td></td>
+<td>4</td>
+<td>com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView@5c313224</td></tr>
+<tr>
+<td title='com.nopcommerce.login.TC_01_LogIn.TC01_LogIn_EmptyData()'><b>TC01_LogIn_EmptyData</b><br>Test class: com.nopcommerce.login.TC_01_LogIn</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.login.TC_01_LogIn@4ed18798</td></tr>
+<tr>
+<td title='com.nopcommerce.myaccount.TC_01_MyAccount.TC01_MyAccount_EdiCustomerInfo()'><b>TC01_MyAccount_EdiCustomerInfo</b><br>Test class: com.nopcommerce.myaccount.TC_01_MyAccount</td>
+<td></td>
+<td>9</td>
+<td>com.nopcommerce.myaccount.TC_01_MyAccount@1e1e837d</td></tr>
+<tr>
+<td title='com.nopcommerce.register.TC_01_Register.TC01_Register_EmptyData()'><b>TC01_Register_EmptyData</b><br>Test class: com.nopcommerce.register.TC_01_Register<br/>
+<a href="#Output-1390601254" onClick='toggleBox("Output-1390601254", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1390601254" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1390601254">
+[INFO ] [2021-09-19 18:42:52,243] Click on Register button
+<br><br/>
+[INFO ] [2021-09-19 18:42:52,475] Get error message on First Name text box
+<br><br/>
+[INFO ] [2021-09-19 18:42:52,519]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-09-19 18:42:52,519] Get error message on Last Name text box
+<br><br/>
+[INFO ] [2021-09-19 18:42:52,564]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-09-19 18:42:52,564] Get error message on Email text box
+<br><br/>
+[INFO ] [2021-09-19 18:42:52,604]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-09-19 18:42:52,604] Get error message on Password text box
+<br><br/>
+[INFO ] [2021-09-19 18:42:52,647]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-09-19 18:42:52,647] Get error message on Confirm Password text box
+<br><br/>
+[INFO ] [2021-09-19 18:42:52,689]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.register.TC_01_Register@14b275bd</td></tr>
+<tr>
+<td title='com.nopcommerce.search.TC_01_Search.TC01_Search_WithEmptyData()'><b>TC01_Search_WithEmptyData</b><br>Test class: com.nopcommerce.search.TC_01_Search</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.search.TC_01_Search@4b03cbad</td></tr>
+<tr>
+<td title='com.nopcommerce.sort.TC_01_Sort_Display_Paging.TC01_Sort_By_Name_AZ()'><b>TC01_Sort_By_Name_AZ</b><br>Test class: com.nopcommerce.sort.TC_01_Sort_Display_Paging</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.sort.TC_01_Sort_Display_Paging@5b29ab61</td></tr>
+<tr>
+<td title='com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView.TC02_AddProductToCard()'><b>TC02_AddProductToCard</b><br>Test class: com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView</td>
+<td></td>
+<td>5</td>
+<td>com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView@5c313224</td></tr>
+<tr>
+<td title='com.nopcommerce.login.TC_01_LogIn.TC02_LogIn_InvalidEmail()'><b>TC02_LogIn_InvalidEmail</b><br>Test class: com.nopcommerce.login.TC_01_LogIn</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.login.TC_01_LogIn@4ed18798</td></tr>
+<tr>
+<td title='com.nopcommerce.myaccount.TC_01_MyAccount.TC02_MyAccount_AddAddressInfo()'><b>TC02_MyAccount_AddAddressInfo</b><br>Test class: com.nopcommerce.myaccount.TC_01_MyAccount</td>
+<td></td>
+<td>17</td>
+<td>com.nopcommerce.myaccount.TC_01_MyAccount@1e1e837d</td></tr>
+<tr>
+<td title='com.nopcommerce.register.TC_01_Register.TC02_Register_InvalidEmail()'><b>TC02_Register_InvalidEmail</b><br>Test class: com.nopcommerce.register.TC_01_Register<br/>
+<a href="#Output-1487943810" onClick='toggleBox("Output-1487943810", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1487943810" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1487943810">
+[INFO ] [2021-09-19 18:42:53,888] Input valid FirstName to textbox
+<br><br/>
+[INFO ] [2021-09-19 18:42:55,265] Input valid LastName to textbox
+<br><br/>
+[INFO ] [2021-09-19 18:42:56,524] Input invalid email to textbox
+<br><br/>
+[INFO ] [2021-09-19 18:42:57,771] Input password to textbox
+<br><br/>
+[INFO ] [2021-09-19 18:42:59,045] Input valid Confirm password to textbox
+<br><br/>
+[INFO ] [2021-09-19 18:43:00,303] Click on Register button
+<br><br/>
+[INFO ] [2021-09-19 18:43:00,454] Get error message on Email text box
+<br><br/>
+[INFO ] [2021-09-19 18:43:00,497]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.nopcommerce.register.TC_01_Register@14b275bd</td></tr>
+<tr>
+<td title='com.nopcommerce.search.TC_01_Search.TC02_Search_WithNotExistedData()'><b>TC02_Search_WithNotExistedData</b><br>Test class: com.nopcommerce.search.TC_01_Search</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.search.TC_01_Search@4b03cbad</td></tr>
+<tr>
+<td title='com.nopcommerce.sort.TC_01_Sort_Display_Paging.TC02_Sort_By_Name_ZA()'><b>TC02_Sort_By_Name_ZA</b><br>Test class: com.nopcommerce.sort.TC_01_Sort_Display_Paging</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.sort.TC_01_Sort_Display_Paging@5b29ab61</td></tr>
+<tr>
+<td title='com.nopcommerce.login.TC_01_LogIn.TC03_LogIn_NotExistedEmail()'><b>TC03_LogIn_NotExistedEmail</b><br>Test class: com.nopcommerce.login.TC_01_LogIn</td>
+<td></td>
+<td>3</td>
+<td>com.nopcommerce.login.TC_01_LogIn@4ed18798</td></tr>
+<tr>
+<td title='com.nopcommerce.myaccount.TC_01_MyAccount.TC03_MyAccount_ChangePassword()'><b>TC03_MyAccount_ChangePassword</b><br>Test class: com.nopcommerce.myaccount.TC_01_MyAccount</td>
+<td></td>
+<td>16</td>
+<td>com.nopcommerce.myaccount.TC_01_MyAccount@1e1e837d</td></tr>
+<tr>
+<td title='com.nopcommerce.register.TC_01_Register.TC03_Register_ExistedEmail()'><b>TC03_Register_ExistedEmail</b><br>Test class: com.nopcommerce.register.TC_01_Register<br/>
+<a href="#Output-705170339" onClick='toggleBox("Output-705170339", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-705170339" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-705170339">
+[INFO ] [2021-09-19 18:43:01,663] Input valid FirstName to textbox
+<br><br/>
+[INFO ] [2021-09-19 18:43:02,961] Input valid LastName to textbox
+<br><br/>
+[INFO ] [2021-09-19 18:43:04,234] Input existed email to textbox
+<br><br/>
+[INFO ] [2021-09-19 18:43:05,512] Input password to textbox
+<br><br/>
+[INFO ] [2021-09-19 18:43:06,773] Input valid Confirm password to textbox
+<br><br/>
+[INFO ] [2021-09-19 18:43:08,030] Click on Register button
+<br><br/>
+[INFO ] [2021-09-19 18:43:09,380] Get error message on Email text box
+<br><br/>
+[INFO ] [2021-09-19 18:43:09,415]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.nopcommerce.register.TC_01_Register@14b275bd</td></tr>
+<tr>
+<td title='com.nopcommerce.register.TC_01_Register.TC03_Register_InvalidPassword()'><b>TC03_Register_InvalidPassword</b><br>Test class: com.nopcommerce.register.TC_01_Register<br/>
+<a href="#Output-944573983" onClick='toggleBox("Output-944573983", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-944573983" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-944573983">
+[INFO ] [2021-09-19 18:43:09,846] Input valid FirstName to textbox
+<br><br/>
+[INFO ] [2021-09-19 18:43:11,112] Input valid LastName to textbox
+<br><br/>
+[INFO ] [2021-09-19 18:43:12,418] Input existed email to textbox
+<br><br/>
+[INFO ] [2021-09-19 18:43:13,712] Input password to textbox
+<br><br/>
+[INFO ] [2021-09-19 18:43:14,954] Input valid Confirm password to textbox
+<br><br/>
+[INFO ] [2021-09-19 18:43:16,227] Click on Register button
+<br><br/>
+[INFO ] [2021-09-19 18:43:16,340] Get error message on Password text box
+<br><br/>
+[INFO ] [2021-09-19 18:43:16,378]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-09-19 18:43:16,378] Get error message on Confirm password text box
+<br><br/>
+[INFO ] [2021-09-19 18:43:16,412]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.nopcommerce.register.TC_01_Register@14b275bd</td></tr>
+<tr>
+<td title='com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView.TC03_RemoveProduct()'><b>TC03_RemoveProduct</b><br>Test class: com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView</td>
+<td></td>
+<td>9</td>
+<td>com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView@5c313224</td></tr>
+<tr>
+<td title='com.nopcommerce.search.TC_01_Search.TC03_Search_WithProductName()'><b>TC03_Search_WithProductName</b><br>Test class: com.nopcommerce.search.TC_01_Search</td>
+<td></td>
+<td>3</td>
+<td>com.nopcommerce.search.TC_01_Search@4b03cbad</td></tr>
+<tr>
+<td title='com.nopcommerce.sort.TC_01_Sort_Display_Paging.TC03_Sort_By_Price_LowToHigh()'><b>TC03_Sort_By_Price_LowToHigh</b><br>Test class: com.nopcommerce.sort.TC_01_Sort_Display_Paging</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.sort.TC_01_Sort_Display_Paging@5b29ab61</td></tr>
+<tr>
+<td title='com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView.TC04_CompareProduct()'><b>TC04_CompareProduct</b><br>Test class: com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView</td>
+<td></td>
+<td>7</td>
+<td>com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView@5c313224</td></tr>
+<tr>
+<td title='com.nopcommerce.login.TC_01_LogIn.TC04_LogIn_EmptyPassword()'><b>TC04_LogIn_EmptyPassword</b><br>Test class: com.nopcommerce.login.TC_01_LogIn</td>
+<td></td>
+<td>3</td>
+<td>com.nopcommerce.login.TC_01_LogIn@4ed18798</td></tr>
+<tr>
+<td title='com.nopcommerce.myaccount.TC_01_MyAccount.TC04_MyAccount_MyProductView()'><b>TC04_MyAccount_MyProductView</b><br>Test class: com.nopcommerce.myaccount.TC_01_MyAccount</td>
+<td></td>
+<td>9</td>
+<td>com.nopcommerce.myaccount.TC_01_MyAccount@1e1e837d</td></tr>
+<tr>
+<td title='com.nopcommerce.search.TC_01_Search.TC04_Search_WithExactlyProductName()'><b>TC04_Search_WithExactlyProductName</b><br>Test class: com.nopcommerce.search.TC_01_Search</td>
+<td></td>
+<td>3</td>
+<td>com.nopcommerce.search.TC_01_Search@4b03cbad</td></tr>
+<tr>
+<td title='com.nopcommerce.sort.TC_01_Sort_Display_Paging.TC04_Sort_By_Price_HighToLow()'><b>TC04_Sort_By_Price_HighToLow</b><br>Test class: com.nopcommerce.sort.TC_01_Sort_Display_Paging</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.sort.TC_01_Sort_Display_Paging@5b29ab61</td></tr>
+<tr>
+<td title='com.nopcommerce.login.TC_01_LogIn.TC05_LogIn_WrongPassword()'><b>TC05_LogIn_WrongPassword</b><br>Test class: com.nopcommerce.login.TC_01_LogIn</td>
+<td></td>
+<td>3</td>
+<td>com.nopcommerce.login.TC_01_LogIn@4ed18798</td></tr>
+<tr>
+<td title='com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView.TC05_RecentReviewProduct()'><b>TC05_RecentReviewProduct</b><br>Test class: com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView</td>
+<td></td>
+<td>9</td>
+<td>com.nopcommerce.wishlist.TC_01_Wishlist_Compare_RecentView@5c313224</td></tr>
+<tr>
+<td title='com.nopcommerce.search.TC_01_Search.TC05_Search_AdvancedWithParentCategory()'><b>TC05_Search_AdvancedWithParentCategory</b><br>Test class: com.nopcommerce.search.TC_01_Search</td>
+<td></td>
+<td>3</td>
+<td>com.nopcommerce.search.TC_01_Search@4b03cbad</td></tr>
+<tr>
+<td title='com.nopcommerce.sort.TC_01_Sort_Display_Paging.TC05_Three_Item_Display()'><b>TC05_Three_Item_Display</b><br>Test class: com.nopcommerce.sort.TC_01_Sort_Display_Paging</td>
+<td></td>
+<td>5</td>
+<td>com.nopcommerce.sort.TC_01_Sort_Display_Paging@5b29ab61</td></tr>
+<tr>
+<td title='com.nopcommerce.search.TC_01_Search.TC06_Search_AdvancedWithSubCategory()'><b>TC06_Search_AdvancedWithSubCategory</b><br>Test class: com.nopcommerce.search.TC_01_Search</td>
+<td></td>
+<td>4</td>
+<td>com.nopcommerce.search.TC_01_Search@4b03cbad</td></tr>
+<tr>
+<td title='com.nopcommerce.sort.TC_01_Sort_Display_Paging.TC06_Six_Item_Display()'><b>TC06_Six_Item_Display</b><br>Test class: com.nopcommerce.sort.TC_01_Sort_Display_Paging</td>
+<td></td>
+<td>5</td>
+<td>com.nopcommerce.sort.TC_01_Sort_Display_Paging@5b29ab61</td></tr>
+<tr>
+<td title='com.nopcommerce.sort.TC_01_Sort_Display_Paging.TC07_Nine_Item_Display()'><b>TC07_Nine_Item_Display</b><br>Test class: com.nopcommerce.sort.TC_01_Sort_Display_Paging</td>
+<td></td>
+<td>4</td>
+<td>com.nopcommerce.sort.TC_01_Sort_Display_Paging@5b29ab61</td></tr>
+<tr>
+<td title='com.nopcommerce.search.TC_01_Search.TC07_Search_AdvancedWithInCorrectManufacturer()'><b>TC07_Search_AdvancedWithInCorrectManufacturer</b><br>Test class: com.nopcommerce.search.TC_01_Search</td>
+<td></td>
+<td>4</td>
+<td>com.nopcommerce.search.TC_01_Search@4b03cbad</td></tr>
+<tr>
+<td title='com.nopcommerce.search.TC_01_Search.TC08_Search_AdvancedWitCorrectManufacturer()'><b>TC08_Search_AdvancedWitCorrectManufacturer</b><br>Test class: com.nopcommerce.search.TC_01_Search</td>
+<td></td>
+<td>3</td>
+<td>com.nopcommerce.search.TC_01_Search@4b03cbad</td></tr>
+</table><p>
+</body>
+</html>

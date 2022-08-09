@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run On Chrome"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="21.525">
+  <properties />
+  
+  
+            <testcase name="TC01_Register_EmptyData" time="0.561" classname="com.nopcommerce.user.register.TC_01_Register" />
+                <testcase name="TC03_Register_ExistedEmail" time="7.819" classname="com.nopcommerce.user.register.TC_01_Register" />
+                <testcase name="TC03_Register_InvalidPassword" time="6.455" classname="com.nopcommerce.user.register.TC_01_Register" />
+                <testcase name="TC02_Register_InvalidEmail" time="6.690" classname="com.nopcommerce.user.register.TC_01_Register" />
+      
+</testsuite>

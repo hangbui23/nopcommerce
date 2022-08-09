@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run On Firefox"
+           tests="14"
+           failures="1"
+           errors="0"
+           skipped="13"
+           time="0.002">
+  <properties />
+            <testcase name="beforeClass" time="0.002" classname="com.nopcommerce.admin.search.TC_01_Admin_Search">
+                <failure type="java.lang.IllegalArgumentException"
+                  message="No enum constant commons.BrowserList.FIREFOX_UI"
+              >
+<![CDATA[java.lang.IllegalArgumentException: No enum constant commons.BrowserList.FIREFOX_UI
+  java.base/java.lang.Enum.valueOf(Enum.java:240)
+  commons.BrowserList.valueOf(BrowserList.java:1)
+  factoryEnvironment.LocalFactory.createDriver(LocalFactory.java:24)
+  commons.BaseTest2.getBrowserDriver(BaseTest2.java:57)
+  com.nopcommerce.admin.search.TC_01_Admin_Search.beforeClass(TC_01_Admin_Search.java:37)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+  org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="navigateToBrowser" time="0.0" classname="com.nopcommerce.admin.search.TC_01_Admin_Search">
+          <skipped />
+    </testcase>
+            <testcase name="navigateToBrowser" time="0.0" classname="com.nopcommerce.admin.search.TC_01_Admin_Search">
+          <skipped />
+    </testcase>
+            <testcase name="navigateToBrowser" time="0.0" classname="com.nopcommerce.admin.search.TC_01_Admin_Search">
+          <skipped />
+    </testcase>
+            <testcase name="navigateToBrowser" time="0.0" classname="com.nopcommerce.admin.search.TC_01_Admin_Search">
+          <skipped />
+    </testcase>
+            <testcase name="navigateToBrowser" time="0.0" classname="com.nopcommerce.admin.search.TC_01_Admin_Search">
+          <skipped />
+    </testcase>
+            <testcase name="navigateToBrowser" time="0.0" classname="com.nopcommerce.admin.search.TC_01_Admin_Search">
+          <skipped />
+    </testcase>
+            <testcase name="afterClass" time="0.0" classname="com.nopcommerce.admin.search.TC_01_Admin_Search">
+          <skipped />
+    </testcase>
+            <testcase name="TC06_Search_With_Product_SKU_NAME" time="0.0" classname="com.nopcommerce.admin.search.TC_01_Admin_Search">
+          <skipped />
+    </testcase>
+            <testcase name="TC05_Search_With_Product_Name_Manufacturer" time="0.0" classname="com.nopcommerce.admin.search.TC_01_Admin_Search">
+          <skipped />
+    </testcase>
+            <testcase name="TC03_Search_With_Product_Name_Category_Search" time="0.0" classname="com.nopcommerce.admin.search.TC_01_Admin_Search">
+          <skipped />
+    </testcase>
+            <testcase name="TC01_Search_With_Product_Name" time="0.0" classname="com.nopcommerce.admin.search.TC_01_Admin_Search">
+          <skipped />
+    </testcase>
+            <testcase name="TC04_Search_With_Product_Name_Category_Search" time="0.0" classname="com.nopcommerce.admin.search.TC_01_Admin_Search">
+          <skipped />
+    </testcase>
+            <testcase name="TC02_Search_With_Product_Name_Category_Search" time="0.0" classname="com.nopcommerce.admin.search.TC_01_Admin_Search">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

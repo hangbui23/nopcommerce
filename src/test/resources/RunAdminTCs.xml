@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Nopcommerce" parallel="true" thread-count="2">
+
+<parameter name ="envi" value="admin"/>
+
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+		<!-- <listener class-name="reportConfig.ExtendReportListenerVersion4" /> -->
+		<listener class-name="reportConfig.AllureTestListener" />
+		<listener class-name="reportConfig.ReportNGListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="retryConfig.RetryListener" />
+	</listeners>
+	<test name="Run On Chrome">
+		<parameter name="environmentUrl" value="DEV"></parameter>	
+		<parameter name="envName" value="local"></parameter>		
+		<parameter name="browserName" value="chrome_ui"></parameter>
+		<parameter name="browserVersion" value="89.0.1"></parameter>
+		<parameter name="ipAddress" value="192.168.1.1"></parameter>
+		<parameter name="portNumber" value="1234"></parameter>
+		<parameter name="osName" value="Window"></parameter>
+		<parameter name="osVersion" value="11"></parameter>
+		<classes>
+			<class name="com.nopcommerce.admin.search.TC_01_Admin_Search" />
+		</classes>
+	</test>
+
+	<test name="Run On Firefox">
+	<parameter name="environmentUrl" value="DEV"></parameter>	
+		<parameter name="envName" value="local"></parameter>		
+		<parameter name="browserName" value="firefox_ui"></parameter>
+		<parameter name="browserVersion" value="89.0.1"></parameter>
+		<parameter name="ipAddress" value="192.168.1.1"></parameter>
+		<parameter name="portNumber" value="1234"></parameter>
+		<parameter name="osName" value="Window"></parameter>
+		<parameter name="osVersion" value="11"></parameter>
+		<classes>
+			<class name="com.nopcommerce.admin.search.TC_01_Admin_Search" />
+		</classes>
+	</test>
+	<!-- <test name="Run On Firefox"> <parameter name="browser" value="firefox_ui"></parameter> <classes> <class name="com.nopcomerce.users.Level11_Register_LogIn_LogReport" /> </classes> </test> Test -->
+
+	<!-- <test name="Run On Chrome Headless"> <parameter name="browser" value="chrome_headless"></parameter> <classes> <class name="com.nopcomerce.users.Level4_Register_LogIn_MultipleBrowser" /> </classes> </test> Test <test name="Run On Firefox Headless"> 
+		<parameter name="browser" value="firefox_headless"></parameter> <classes> <class name="com.nopcomerce.users.Level4_Register_LogIn_MultipleBrowser" /> </classes> </test> Test -->
+	-->
+
+	<!-- <test name="Run On Edge"> <parameter name="browser" value="edge"></parameter> <classes> <class name="com.nopcomerce.users.Level7_Register_LogIn_DynamicLocator" /> </classes> </test> Test -->
+
+</suite> <!-- Suite -->

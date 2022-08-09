@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run On Chrome"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="26.596">
+  <properties />
+  
+  
+            <testcase name="TC01_Search_WithEmptyData" time="2.692" classname="com.nopcommerce.search.TC_01_Search" />
+                <testcase name="TC05_Search_AdvancedWithParentCategory" time="3.262" classname="com.nopcommerce.search.TC_01_Search" />
+                <testcase name="TC08_Search_AdvancedWitCorrectManufacturer" time="4.125" classname="com.nopcommerce.search.TC_01_Search" />
+                <testcase name="TC02_Search_WithNotExistedData" time="3.635" classname="com.nopcommerce.search.TC_01_Search" />
+                <testcase name="TC07_Search_AdvancedWithInCorrectManufacturer" time="3.457" classname="com.nopcommerce.search.TC_01_Search" />
+                <testcase name="TC06_Search_AdvancedWithSubCategory" time="3.348" classname="com.nopcommerce.search.TC_01_Search" />
+                <testcase name="TC03_Search_WithProductName" time="3.055" classname="com.nopcommerce.search.TC_01_Search" />
+                <testcase name="TC04_Search_WithExactlyProductName" time="3.022" classname="com.nopcommerce.search.TC_01_Search" />
+      
+</testsuite>

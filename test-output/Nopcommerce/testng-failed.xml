@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Nopcommerce]">
+  <parameter name="envi" value="admin"/>
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="reportConfig.AllureTestListener"/>
+    <listener class-name="reportConfig.ReportNGListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="retryConfig.RetryListener"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Run On Chrome(failed)">
+    <parameter name="osVersion" value="11"/>
+    <parameter name="envName" value="local"/>
+    <parameter name="browserVersion" value="89.0.1"/>
+    <parameter name="ipAddress" value="192.168.1.1"/>
+    <parameter name="browserName" value="chrome_ui"/>
+    <parameter name="osName" value="Window"/>
+    <parameter name="portNumber" value="1234"/>
+    <parameter name="environmentUrl" value="DEV"/>
+    <classes>
+      <class name="com.nopcommerce.admin.search.TC_01_Admin_Search">
+        <methods>
+          <include name="TC03_Search_With_Product_Name_Category_Search"/>
+          <include name="afterClass"/>
+          <include name="TC02_Search_With_Product_Name_Category_Search"/>
+          <include name="TC04_Search_With_Product_Name_Category_Search"/>
+          <include name="deleteAllFilesInReportNGScreenshot"/>
+          <include name="navigateToBrowser"/>
+          <include name="TC05_Search_With_Product_Name_Manufacturer"/>
+          <include name="beforeClass"/>
+          <include name="TC06_Search_With_Product_SKU_NAME"/>
+        </methods>
+      </class> <!-- com.nopcommerce.admin.search.TC_01_Admin_Search -->
+    </classes>
+  </test> <!-- Run On Chrome(failed) -->
+  <test thread-count="2" parallel="methods" name="Run On Firefox(failed)">
+    <parameter name="osVersion" value="11"/>
+    <parameter name="envName" value="local"/>
+    <parameter name="browserVersion" value="89.0.1"/>
+    <parameter name="ipAddress" value="192.168.1.1"/>
+    <parameter name="browserName" value="firefox_ui"/>
+    <parameter name="osName" value="Window"/>
+    <parameter name="portNumber" value="1234"/>
+    <parameter name="environmentUrl" value="DEV"/>
+    <classes>
+      <class name="com.nopcommerce.admin.search.TC_01_Admin_Search">
+        <methods>
+          <include name="TC03_Search_With_Product_Name_Category_Search"/>
+          <include name="TC01_Search_With_Product_Name"/>
+          <include name="afterClass"/>
+          <include name="TC02_Search_With_Product_Name_Category_Search"/>
+          <include name="TC04_Search_With_Product_Name_Category_Search"/>
+          <include name="deleteAllFilesInReportNGScreenshot"/>
+          <include name="navigateToBrowser"/>
+          <include name="TC05_Search_With_Product_Name_Manufacturer"/>
+          <include name="beforeClass"/>
+          <include name="TC06_Search_With_Product_SKU_NAME"/>
+        </methods>
+      </class> <!-- com.nopcommerce.admin.search.TC_01_Admin_Search -->
+    </classes>
+  </test> <!-- Run On Firefox(failed) -->
+</suite> <!-- Failed suite [Nopcommerce] -->

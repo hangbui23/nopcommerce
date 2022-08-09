@@ -1,0 +1,375 @@
+<html>
+<head>
+<title>TestNG:  Run On Firefox</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Run On Firefox</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/6</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jun 25 07:54:58 ICT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (476 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nopcommerce.admin.search.TC_01_Admin_Search.beforeClass()'><b>beforeClass</b><br>Test class: com.nopcommerce.admin.search.TC_01_Admin_Search<br>Parameters: DEV, local, firefox_ui, 89.0.1, 192.168.1.1, 1234, Window, 11</td>
+<td><div><pre>java.lang.IllegalArgumentException: No enum constant commons.BrowserList.FIREFOX_UI
+	at java.base/java.lang.Enum.valueOf(Enum.java:240)
+	at commons.BrowserList.valueOf(BrowserList.java:1)
+	at factoryEnvironment.LocalFactory.createDriver(LocalFactory.java:24)
+	at commons.BaseTest2.getBrowserDriver(BaseTest2.java:57)
+	at com.nopcommerce.admin.search.TC_01_Admin_Search.beforeClass(TC_01_Admin_Search.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace310719995", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace310719995'><pre>java.lang.IllegalArgumentException: No enum constant commons.BrowserList.FIREFOX_UI
+	at java.base/java.lang.Enum.valueOf(Enum.java:240)
+	at commons.BrowserList.valueOf(BrowserList.java:1)
+	at factoryEnvironment.LocalFactory.createDriver(LocalFactory.java:24)
+	at commons.BaseTest2.getBrowserDriver(BaseTest2.java:57)
+	at com.nopcommerce.admin.search.TC_01_Admin_Search.beforeClass(TC_01_Admin_Search.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>com.nopcommerce.admin.search.TC_01_Admin_Search@480ad82c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nopcommerce.admin.search.TC_01_Admin_Search.navigateToBrowser()'><b>navigateToBrowser</b><br>Test class: com.nopcommerce.admin.search.TC_01_Admin_Search</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.admin.search.TC_01_Admin_Search@480ad82c</td></tr>
+<tr>
+<td title='com.nopcommerce.admin.search.TC_01_Admin_Search.navigateToBrowser()'><b>navigateToBrowser</b><br>Test class: com.nopcommerce.admin.search.TC_01_Admin_Search</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.admin.search.TC_01_Admin_Search@480ad82c</td></tr>
+<tr>
+<td title='com.nopcommerce.admin.search.TC_01_Admin_Search.navigateToBrowser()'><b>navigateToBrowser</b><br>Test class: com.nopcommerce.admin.search.TC_01_Admin_Search</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.admin.search.TC_01_Admin_Search@480ad82c</td></tr>
+<tr>
+<td title='com.nopcommerce.admin.search.TC_01_Admin_Search.navigateToBrowser()'><b>navigateToBrowser</b><br>Test class: com.nopcommerce.admin.search.TC_01_Admin_Search</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.admin.search.TC_01_Admin_Search@480ad82c</td></tr>
+<tr>
+<td title='com.nopcommerce.admin.search.TC_01_Admin_Search.navigateToBrowser()'><b>navigateToBrowser</b><br>Test class: com.nopcommerce.admin.search.TC_01_Admin_Search</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.admin.search.TC_01_Admin_Search@480ad82c</td></tr>
+<tr>
+<td title='com.nopcommerce.admin.search.TC_01_Admin_Search.navigateToBrowser()'><b>navigateToBrowser</b><br>Test class: com.nopcommerce.admin.search.TC_01_Admin_Search</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.admin.search.TC_01_Admin_Search@480ad82c</td></tr>
+<tr>
+<td title='com.nopcommerce.admin.search.TC_01_Admin_Search.afterClass()'><b>afterClass</b><br>Test class: com.nopcommerce.admin.search.TC_01_Admin_Search</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.admin.search.TC_01_Admin_Search@480ad82c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nopcommerce.admin.search.TC_01_Admin_Search.TC01_Search_With_Product_Name()'><b>TC01_Search_With_Product_Name</b><br>Test class: com.nopcommerce.admin.search.TC_01_Admin_Search</td>
+<td><div><pre>java.lang.IllegalArgumentException: No enum constant commons.BrowserList.FIREFOX_UI
+	at java.base/java.lang.Enum.valueOf(Enum.java:240)
+	at commons.BrowserList.valueOf(BrowserList.java:1)
+	at factoryEnvironment.LocalFactory.createDriver(LocalFactory.java:24)
+	at commons.BaseTest2.getBrowserDriver(BaseTest2.java:57)
+	at com.nopcommerce.admin.search.TC_01_Admin_Search.beforeClass(TC_01_Admin_Search.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace637287602", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace637287602'><pre>java.lang.IllegalArgumentException: No enum constant commons.BrowserList.FIREFOX_UI
+	at java.base/java.lang.Enum.valueOf(Enum.java:240)
+	at commons.BrowserList.valueOf(BrowserList.java:1)
+	at factoryEnvironment.LocalFactory.createDriver(LocalFactory.java:24)
+	at commons.BaseTest2.getBrowserDriver(BaseTest2.java:57)
+	at com.nopcommerce.admin.search.TC_01_Admin_Search.beforeClass(TC_01_Admin_Search.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>com.nopcommerce.admin.search.TC_01_Admin_Search@480ad82c</td></tr>
+<tr>
+<td title='com.nopcommerce.admin.search.TC_01_Admin_Search.TC02_Search_With_Product_Name_Category_Search()'><b>TC02_Search_With_Product_Name_Category_Search</b><br>Test class: com.nopcommerce.admin.search.TC_01_Admin_Search</td>
+<td><div><pre>java.lang.IllegalArgumentException: No enum constant commons.BrowserList.FIREFOX_UI
+	at java.base/java.lang.Enum.valueOf(Enum.java:240)
+	at commons.BrowserList.valueOf(BrowserList.java:1)
+	at factoryEnvironment.LocalFactory.createDriver(LocalFactory.java:24)
+	at commons.BaseTest2.getBrowserDriver(BaseTest2.java:57)
+	at com.nopcommerce.admin.search.TC_01_Admin_Search.beforeClass(TC_01_Admin_Search.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1724473910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1724473910'><pre>java.lang.IllegalArgumentException: No enum constant commons.BrowserList.FIREFOX_UI
+	at java.base/java.lang.Enum.valueOf(Enum.java:240)
+	at commons.BrowserList.valueOf(BrowserList.java:1)
+	at factoryEnvironment.LocalFactory.createDriver(LocalFactory.java:24)
+	at commons.BaseTest2.getBrowserDriver(BaseTest2.java:57)
+	at com.nopcommerce.admin.search.TC_01_Admin_Search.beforeClass(TC_01_Admin_Search.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>com.nopcommerce.admin.search.TC_01_Admin_Search@480ad82c</td></tr>
+<tr>
+<td title='com.nopcommerce.admin.search.TC_01_Admin_Search.TC03_Search_With_Product_Name_Category_Search()'><b>TC03_Search_With_Product_Name_Category_Search</b><br>Test class: com.nopcommerce.admin.search.TC_01_Admin_Search</td>
+<td><div><pre>java.lang.IllegalArgumentException: No enum constant commons.BrowserList.FIREFOX_UI
+	at java.base/java.lang.Enum.valueOf(Enum.java:240)
+	at commons.BrowserList.valueOf(BrowserList.java:1)
+	at factoryEnvironment.LocalFactory.createDriver(LocalFactory.java:24)
+	at commons.BaseTest2.getBrowserDriver(BaseTest2.java:57)
+	at com.nopcommerce.admin.search.TC_01_Admin_Search.beforeClass(TC_01_Admin_Search.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace933779072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace933779072'><pre>java.lang.IllegalArgumentException: No enum constant commons.BrowserList.FIREFOX_UI
+	at java.base/java.lang.Enum.valueOf(Enum.java:240)
+	at commons.BrowserList.valueOf(BrowserList.java:1)
+	at factoryEnvironment.LocalFactory.createDriver(LocalFactory.java:24)
+	at commons.BaseTest2.getBrowserDriver(BaseTest2.java:57)
+	at com.nopcommerce.admin.search.TC_01_Admin_Search.beforeClass(TC_01_Admin_Search.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>com.nopcommerce.admin.search.TC_01_Admin_Search@480ad82c</td></tr>
+<tr>
+<td title='com.nopcommerce.admin.search.TC_01_Admin_Search.TC04_Search_With_Product_Name_Category_Search()'><b>TC04_Search_With_Product_Name_Category_Search</b><br>Test class: com.nopcommerce.admin.search.TC_01_Admin_Search</td>
+<td><div><pre>java.lang.IllegalArgumentException: No enum constant commons.BrowserList.FIREFOX_UI
+	at java.base/java.lang.Enum.valueOf(Enum.java:240)
+	at commons.BrowserList.valueOf(BrowserList.java:1)
+	at factoryEnvironment.LocalFactory.createDriver(LocalFactory.java:24)
+	at commons.BaseTest2.getBrowserDriver(BaseTest2.java:57)
+	at com.nopcommerce.admin.search.TC_01_Admin_Search.beforeClass(TC_01_Admin_Search.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace644469303", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace644469303'><pre>java.lang.IllegalArgumentException: No enum constant commons.BrowserList.FIREFOX_UI
+	at java.base/java.lang.Enum.valueOf(Enum.java:240)
+	at commons.BrowserList.valueOf(BrowserList.java:1)
+	at factoryEnvironment.LocalFactory.createDriver(LocalFactory.java:24)
+	at commons.BaseTest2.getBrowserDriver(BaseTest2.java:57)
+	at com.nopcommerce.admin.search.TC_01_Admin_Search.beforeClass(TC_01_Admin_Search.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>com.nopcommerce.admin.search.TC_01_Admin_Search@480ad82c</td></tr>
+<tr>
+<td title='com.nopcommerce.admin.search.TC_01_Admin_Search.TC05_Search_With_Product_Name_Manufacturer()'><b>TC05_Search_With_Product_Name_Manufacturer</b><br>Test class: com.nopcommerce.admin.search.TC_01_Admin_Search</td>
+<td><div><pre>java.lang.IllegalArgumentException: No enum constant commons.BrowserList.FIREFOX_UI
+	at java.base/java.lang.Enum.valueOf(Enum.java:240)
+	at commons.BrowserList.valueOf(BrowserList.java:1)
+	at factoryEnvironment.LocalFactory.createDriver(LocalFactory.java:24)
+	at commons.BaseTest2.getBrowserDriver(BaseTest2.java:57)
+	at com.nopcommerce.admin.search.TC_01_Admin_Search.beforeClass(TC_01_Admin_Search.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1147418256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1147418256'><pre>java.lang.IllegalArgumentException: No enum constant commons.BrowserList.FIREFOX_UI
+	at java.base/java.lang.Enum.valueOf(Enum.java:240)
+	at commons.BrowserList.valueOf(BrowserList.java:1)
+	at factoryEnvironment.LocalFactory.createDriver(LocalFactory.java:24)
+	at commons.BaseTest2.getBrowserDriver(BaseTest2.java:57)
+	at com.nopcommerce.admin.search.TC_01_Admin_Search.beforeClass(TC_01_Admin_Search.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>com.nopcommerce.admin.search.TC_01_Admin_Search@480ad82c</td></tr>
+<tr>
+<td title='com.nopcommerce.admin.search.TC_01_Admin_Search.TC06_Search_With_Product_SKU_NAME()'><b>TC06_Search_With_Product_SKU_NAME</b><br>Test class: com.nopcommerce.admin.search.TC_01_Admin_Search</td>
+<td><div><pre>java.lang.IllegalArgumentException: No enum constant commons.BrowserList.FIREFOX_UI
+	at java.base/java.lang.Enum.valueOf(Enum.java:240)
+	at commons.BrowserList.valueOf(BrowserList.java:1)
+	at factoryEnvironment.LocalFactory.createDriver(LocalFactory.java:24)
+	at commons.BaseTest2.getBrowserDriver(BaseTest2.java:57)
+	at com.nopcommerce.admin.search.TC_01_Admin_Search.beforeClass(TC_01_Admin_Search.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace965075557", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace965075557'><pre>java.lang.IllegalArgumentException: No enum constant commons.BrowserList.FIREFOX_UI
+	at java.base/java.lang.Enum.valueOf(Enum.java:240)
+	at commons.BrowserList.valueOf(BrowserList.java:1)
+	at factoryEnvironment.LocalFactory.createDriver(LocalFactory.java:24)
+	at commons.BaseTest2.getBrowserDriver(BaseTest2.java:57)
+	at com.nopcommerce.admin.search.TC_01_Admin_Search.beforeClass(TC_01_Admin_Search.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>com.nopcommerce.admin.search.TC_01_Admin_Search@480ad82c</td></tr>
+</table><p>
+</body>
+</html>
